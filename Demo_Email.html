@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo_Email
+    </title>
+</head>
+<body>
+    <input type="text" class="text" name="email_id" id="textbox1" placeholder="Email Address" maxlength="255" onblur="checkemail(this.value)">
+    </div>
+    <script>
+        function checkemail(str){
+            var re=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(str))
+            alert("Please enter a valid email address ");
+        }
+    </script>
+</body>
+</html>

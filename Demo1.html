@@ -1,0 +1,19 @@
+<html>
+<body>
+    <p> This example demonstrates how to assign an "onblur" event to an input element </p>
+    <p> Write something in the field and click outside to lose focus (blur).</p>
+
+    <form id="myForm">
+        <input type="text" onblur="myFunction()">
+    </form>
+
+    <p><strong> Note: Firefox doesnot supports the focus in and focus out events </p></strong>
+
+        <script>
+            function myFunction() {
+                alert("Input field lost focus.");
+            }   
+        </script>
+
+        </body>
+        </html>
